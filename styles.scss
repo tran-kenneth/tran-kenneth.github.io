@@ -1,0 +1,21 @@
+.skills-box {
+  background-color: bisque;
+  //display: flex;
+  //flex-wrap: wrap;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    
+    li {
+      text-align: center;
+      flex-basis: 80px;
+      margin: 3% 3%;
+      i {
+        font-size: 4rem;
+      }
+    }
+    
+  }
+}

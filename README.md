@@ -1,4 +1,4 @@
 # tran-kenneth.github.io
 
-This will be the repository for my personal website and portfolio.
-This will be a work in progress as I learn more advanced CSS and JS to make it look and function better.
+## Introduction
+This the repository for my personal website to display my porfolio. It will be a work in progress as I practice more css to design it to look better.
