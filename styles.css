@@ -1,5 +1,69 @@
-.skills-box {
-  background-color: bisque;
+/*
+Palettes:
+#f0f5f9;
+#c9d6df;
+#52616b;
+#1e2022;
+
+#1b262c;
+#0f4c75;
+#3282b8;
+#bbe1fa;
+*/
+body {
+  margin: 0;
+  background-color: #f0f5f9;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body h1, body h2 {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 700;
+}
+
+body h1 {
+  font-size: 4rem;
+}
+
+body h2 {
+  font-size: 3rem;
+}
+
+body h3 {
+  font-size: 2rem;
+}
+
+.navigation {
+  margin: 1% 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigation .nav-links {
+  position: absolute;
+  right: 0;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigation ul li {
+  margin: 0 3%;
+}
+
+.wrapper {
+  padding: 2% 15% 3%;
+}
+
+.skills-section {
+  background-color: #c9d6df;
 }
 
 .skills-box ul {

@@ -1,7 +1,63 @@
+/*
+Palettes:
+#f0f5f9;
+#c9d6df;
+#52616b;
+#1e2022;
+
+#1b262c;
+#0f4c75;
+#3282b8;
+#bbe1fa;
+*/
+
+body{
+  margin: 0;
+  background-color: #f0f5f9;
+  font-family: 'Montserrat', sans-serif;
+
+  h1, h2{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 700;
+  }
+  h1{
+    font-size: 4rem;
+  }
+  h2{
+    font-size: 3rem;
+  }
+  h3{
+    font-size: 2rem;
+  }
+}
+
+.navigation{
+  margin: 1% 5%;
+  display: flex;
+  .nav-links{
+    position: absolute;
+    right: 0;
+  }
+  ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    li{
+      margin: 0 3%;
+    }
+  }
+}
+
+.wrapper{
+  padding: 2% 15% 3%;
+}
+
+.skills-section{
+  background-color: #c9d6df;;
+}
 .skills-box {
-  background-color: bisque;
-  //display: flex;
-  //flex-wrap: wrap;
+  //padding: 2% 15%;
 
   ul {
     display: flex;
