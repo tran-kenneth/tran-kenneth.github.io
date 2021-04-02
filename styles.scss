@@ -1,77 +1,215 @@
-/*
-Palettes:
-#f0f5f9;
-#c9d6df;
-#52616b;
-#1e2022;
+/* Blue Accent Palette*/
+$blueDarkest: #1b262c;
+$blueDarker: #0f4c75;
+$blueLighter: #3282b8;
+$blueLightest: #bbe1fa;
 
-#1b262c;
-#0f4c75;
-#3282b8;
-#bbe1fa;
-*/
+/* Monochrome Palette */
+$monoLightest: #f0f5f9;
+$monoLighter: #c9d6df;
+$monoMedium: #a1afb8;
+$monoDarker: #52616b;
+$monoDarkest: #1e2022;
 
-body{
+body {
   margin: 0;
   background-color: #f0f5f9;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 
-  h1, h2{
-    font-family: 'Merriweather Sans', sans-serif;
+  h1,
+  h2 {
+    font-family: "Merriweather Sans", sans-serif;
     font-weight: 700;
   }
-  h1{
+  h1 {
     font-size: 4rem;
   }
-  h2{
+  h2 {
     font-size: 3rem;
+    text-align: center;
   }
-  h3{
+  h3 {
     font-size: 2rem;
+  }
+  h1,
+  h2,
+  h3 {
+    margin: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  p,
+  i {
+    color: $monoDarkest;
   }
 }
 
-.navigation{
-  margin: 1% 5%;
-  display: flex;
-  .nav-links{
-    position: absolute;
-    right: 0;
+/* Home section + parallax background */
+html,
+body {
+  height: 100%;
+}
+.home-bg {
+  background-image: url(images/home-background-image-43ratio.jpg);
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+
+  .headings {
+    padding: 20% 5%;
   }
-  ul{
+
+  h1,
+  h3 {
+    color: $monoLightest;
+  }
+}
+
+/* Navbar */
+.navigation {
+  background-color: #1e2022;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  .nav-links {
+    position: absolute;
+    right: 10%;
+  }
+  ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
     display: flex;
-    li{
+    li {
       margin: 0 3%;
     }
   }
+  a {
+    color: #f0f5f9;
+    padding: 20px;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  a:hover {
+    background-color: $monoDarker;
+  }
 }
 
-.wrapper{
+/* About Section */
+.about-section {
+  background-color: $monoLighter;
+  .about-content {
+    display: flex;
+    flex-wrap: wrap;
+
+    //Flex stuff to center
+    justify-content: center;
+    div {
+      flex-basis: 400px;
+      margin: 3% 5%;
+    }
+  }
+
+  .profile-pic {
+    width: 400px;
+    border-radius: 25px;
+  }
+}
+
+.wrapper {
   padding: 2% 15% 3%;
 }
 
-.skills-section{
-  background-color: #c9d6df;;
+/* Skills Section*/
+.skills-section {
+  background-color: $monoMedium;
 }
 .skills-box {
   //padding: 2% 15%;
-
+  background-color: $monoLighter;
+  border-radius: 25px;
   ul {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
-    
+
     li {
       text-align: center;
-      flex-basis: 80px;
+      flex-basis: 135px;
       margin: 3% 3%;
       i {
-        font-size: 4rem;
+        font-size: 5rem;
       }
     }
-    
+  }
+}
+
+// Portfolio
+.portfolio-section {
+  background-color: $monoLighter;
+  text-align: center;
+}
+
+//Contact
+.contact-section {
+  .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    div {
+      flex-basis: 400px;
+      margin: 3% 5%;
+    }
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+    }
+    input[type="text"],
+    input[type="email"] {
+      margin: 1%;
+      padding: 2%;
+      width: 400px;
+    }
+    textarea {
+      margin: 1%;
+      padding: 2%;
+      height: 200px;
+      width: 400px;
+      resize: none;
+    }
+    input,
+    textarea {
+      font-family: "Montserrat", sans-serif;
+      font-size: 1rem;
+    }
+    input[type="submit"] {
+      padding: 0.375rem 0.75rem;
+      font-size: 1rem;
+      line-height: 1.5;
+      border-radius: 0.25rem;
+      color: #fff;
+      background-color: #343a40;
+      border-color: #343a40;
+    }
+  }
+  background-color: $monoMedium;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: $monoDarkest;
+  p {
+    padding: 20px;
+    color: $monoLightest;
+    margin: 0;
   }
 }

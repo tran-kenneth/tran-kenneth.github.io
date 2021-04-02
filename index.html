@@ -25,32 +25,81 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+
     <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
     <!-- Navbar Section-->
-    <section id="navbar">
-      <nav class="navigation">
-        <div class="self-brand">
-          <a href="#">kt.</a>
-        </div>
-        <div class="nav-links">
-          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-        
-      </nav>
-    </section>
+    <nav class="navigation">
+      <div class="self-brand">
+        <a href="#">kt.</a>
+      </div>
+      <div class="nav-links">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
 
     <!-- Home Section -->
-    <h1>I'm Kenneth Tran,</h1>
-    <h3>an always learning full stack developer.</h3>
+    <div class="home-bg">
+      <div class="headings">
+        <h1>Kenneth Tran</h1>
+        <h3>Full Stack Developer</h3>
+      </div>
+    </div>
+
+    <!-- About Me -->
+    <section class="about-section" id="about">
+      <div class="wrapper">
+        <h2>About</h2>
+        <div class="about-content">
+          <div>
+            <img
+              class="profile-pic"
+              src="images/kenneth-picture.jpg"
+              alt="Kenneth profile picture"
+            />
+          </div>
+          <div>
+            <p>Hi, I'm Kenneth!</p>
+            <p>
+              I'm a full stack developer based in Toronto. I come from a
+              chemistry background so I'm no stranger to doing research. Always
+              learning and developing an understanding.
+            </p>
+            <p>
+              In my free time, I enjoy doing bird photography and tackling fun
+              logic based puzzles like sudoku.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Skills Section-->
     <section class="skills-section" id="skills">
       <div class="wrapper">
@@ -101,5 +150,48 @@
         --></div>
       </div>
     </section>
+
+    <!-- Portfolio -->
+    <section class="portfolio-section" id="portfolio">
+      <div class="wrapper">
+        <h2>Portfolio</h2>
+        <h3>In progress...</h3>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact-section" id="contact">
+      <div class="wrapper">
+        <h2>Contact Me</h2>
+        <div class="contact-content">
+          <div>
+            <p>
+              Thanks for checking out my profile. If you would like to get in
+              touch about my work or just chat about all things tech, science
+              and puzzles, feel free to use the contact form provided. You can
+              also follow me on the platforms below.
+            </p>
+            <i class="fab fa-blogger"></i>
+            <i class="fab fa-github-square"></i>
+            <i class="fab fa-linkedin"></i>
+          </div>
+          <div class="contact-form">
+            <form action="index.html">
+              <input type="text" id="name" placeholder="Your Name" />
+              <input type="email" id="email" placeholder="Your Email" />
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Your Message"
+              ></textarea>
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
+  <footer>
+    <p>KT 2021</p>
+  </footer>
 </html>
