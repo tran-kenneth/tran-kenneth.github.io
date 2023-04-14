@@ -5,32 +5,26 @@ body {
   background-color: #f0f5f9;
   font-family: "Montserrat", sans-serif;
 }
-
 body h1,
 body h2 {
   font-family: "Merriweather Sans", sans-serif;
   font-weight: 700;
 }
-
 body h1 {
   font-size: 4rem;
 }
-
 body h2 {
   font-size: 3rem;
   text-align: center;
 }
-
 body h3 {
   font-size: 2rem;
 }
-
 body h1,
 body h2,
 body h3 {
   margin: 0;
 }
-
 body h1,
 body h2,
 body h3,
@@ -53,11 +47,9 @@ body {
   background-size: cover;
   height: 100%;
 }
-
 .home-bg .headings {
   padding: 20% 5%;
 }
-
 .home-bg h1,
 .home-bg h3 {
   color: #f0f5f9;
@@ -71,36 +63,27 @@ body {
   width: 100%;
   margin: 0;
   padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .navigation .nav-links {
   position: absolute;
   right: 10%;
 }
-
 .navigation ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .navigation ul li {
   margin: 0 3%;
 }
-
 .navigation a {
   color: #f0f5f9;
   padding: 20px;
   text-decoration: none;
   font-weight: 700;
 }
-
 .navigation a:hover {
   background-color: #52616b;
 }
@@ -109,24 +92,18 @@ body {
 .about-section {
   background-color: #c9d6df;
 }
-
 .about-section .about-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
+.about-section .about-content p {
+  line-height: 1.5;
+}
 .about-section .about-content div {
-  -ms-flex-preferred-size: 400px;
-      flex-basis: 400px;
+  flex-basis: 400px;
   margin: 3% 5%;
 }
-
 .about-section .profile-pic {
   width: 400px;
   border-radius: 25px;
@@ -145,23 +122,16 @@ body {
   background-color: #c9d6df;
   border-radius: 25px;
 }
-
 .skills-box ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   list-style-type: none;
 }
-
 .skills-box ul li {
   text-align: center;
-  -ms-flex-preferred-size: 135px;
-      flex-basis: 135px;
+  flex-basis: 135px;
   margin: 3% 3%;
 }
-
 .skills-box ul li i {
   font-size: 5rem;
 }
@@ -174,41 +144,28 @@ body {
 .contact-section {
   background-color: #a1afb8;
 }
-
 .contact-section .contact-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
+.contact-section .contact-content p {
+  line-height: 1.5;
+}
 .contact-section .contact-content div {
-  -ms-flex-preferred-size: 400px;
-      flex-basis: 400px;
+  flex-basis: 400px;
   margin: 3% 5%;
 }
-
 .contact-section .contact-content .contact-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
-.contact-section .contact-content input[type="text"],
-.contact-section .contact-content input[type="email"] {
+.contact-section .contact-content input[type=text],
+.contact-section .contact-content input[type=email] {
   margin: 1%;
   padding: 2%;
   width: 400px;
 }
-
 .contact-section .contact-content textarea {
   margin: 1%;
   padding: 2%;
@@ -216,14 +173,12 @@ body {
   width: 400px;
   resize: none;
 }
-
 .contact-section .contact-content input,
 .contact-section .contact-content textarea {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
 }
-
-.contact-section .contact-content input[type="submit"] {
+.contact-section .contact-content input[type=submit] {
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   line-height: 1.5;
@@ -238,10 +193,8 @@ footer {
   text-align: center;
   background-color: #1e2022;
 }
-
 footer p {
   padding: 20px;
   color: #f0f5f9;
   margin: 0;
-}
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
