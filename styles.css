@@ -140,6 +140,27 @@ body {
   background-color: #c9d6df;
   text-align: center;
 }
+.portfolio-section h2 {
+  padding: 25px;
+}
+.portfolio-section .portfolio-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  padding: 25px;
+}
+.portfolio-section .portfolio-item .portfolio-item-picture {
+  width: 250px;
+}
+.portfolio-section .portfolio-item .portfolio-item-description {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.portfolio-section .portfolio-item .portfolio-item-description p {
+  line-height: 1.5;
+}
 
 .contact-section {
   background-color: #a1afb8;
@@ -148,6 +169,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+.contact-section .contact-content a {
+  font-size: 5rem;
 }
 .contact-section .contact-content p {
   line-height: 1.5;
@@ -179,6 +203,8 @@ body {
   font-size: 1rem;
 }
 .contact-section .contact-content input[type=submit] {
+  width: 400px;
+  margin-left: 13px;
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   line-height: 1.5;
